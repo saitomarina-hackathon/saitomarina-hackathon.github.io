@@ -1,0 +1,21 @@
+.musics img {
+  width:200px;
+}
+
+.about-marina img{
+  width: 200px;
+}
+
+.release img{
+  width: 200px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.finish{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
