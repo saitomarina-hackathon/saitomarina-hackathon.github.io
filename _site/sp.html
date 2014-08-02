@@ -4,130 +4,83 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0">
-        <title>Your New Jekyll Site</title>
-        <meta name="viewport" content="width=device-width">
+        <title>SPページ</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <!--test-->
+        <link rel="stylesheet" href="/css/sp/sp.css">
+        <meta name="keywords" content="さいとうまりな,かわいい,ハッカソン" xml:lang="ja" lang="ja" />
+        <meta name="description" content="さいとうまりなの公式ホームページです。" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+        <!--テスト実装-->
+        <link rel="stylesheet" rel="stylesheet" href="/css/sp/jquery.mmenu.css" />
+        <link type="text/css" rel="stylesheet" href="/css/lib/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
+        <link type="text/css" rel="stylesheet" href="/css/lib/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
+        <style type="text/css">
+        @media all and (min-width: 900px) {
+          html, body {
+            height: 100%;
+          }
+          #menu {
+            background: #eee;
+          }
+          #page {
+            border-left: 1px solid #ccc;
+            min-height: 100%;
+          }
+          /* hide open-button */
+          a[href="#menu"] {
+            display: none !important;
+          }
+        }
+        </style>
+        <!--テスト実装-->
+
+        <!--OGP-->
+        <meta property="og:title" content="さいとうまりな公式HP">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="さいとうまりな公式HPです。">
+        <meta property="og:url" content="http://saitoumarina.com">
+        <meta property="og:image" content="https://lh3.googleusercontent.com/proxy/RPCwNaGUdtZAZGkP9B9yjk97s6ErlscFxPftLCB5qwe36aYxsYmCi1BXn6MINKmPiwGDAGYMwsDqtti0gMUgXwxUPxrDwBCsZSnSNkdMg9IBwANV7SYRH7uQgK4bhJpXqg=w426-h255-p">
+        <!--end OGP-->
     </head>
     <body>
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=144838309021627&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
         <div class="site">
 
-          <!--<iframe width="560" height="315" src="//www.youtube.com/embed/HdiWcd1hOKQ" frameborder="0" allowfullscreen></iframe>-->
-<div id="player"></div>
-<script type="text/javascript">
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	var player;
-	function onYouTubeIframeAPIReady() {
-		player = new YT.Player('player', {
-			height: '400px',
-			width: '100%',
-			videoId: '11WmdV9ZtLU',
-			wmode: 'transparent',
-			playerVars: {
-				controls: 0,
-				rel: 0,
-				theme:'light',
-				loop: 1
-			},
-			events: {
-				'onReady': onPlayerReady,
-				'onStateChange': onPlayerStateChange
-			}
-		});
-	}
-	function onPlayerReady(event) {
-		event.target.playVideo();
-		event.target.mute();
-	}
-	function onPlayerStateChange(event) {
-	}
-</script>
-
-<hr>
-
-<div class="musics">
-	<h2>Music</h2>
-	<div class="row">
-		<ul class="col-sm-offset-1 col-sm-2 nav nav-tabs" role="tablist">
-			<li class="active"><a href="#home" role="tab" data-toggle="tab"><p>️ヴィーナスモーニング</p><img src="http://static.kita-colle.com/upload/event/6f/16/40/b2/22/a0/1b/97/47/31/89/9e/f2/c5/0c/6d/contents_1_imageurl.jpg"></a></li>
-			<li><a href="#profile" role="tab" data-toggle="tab"><p>はじまるふたり</p><img src="http://static.kita-colle.com/upload/event/6f/16/40/b2/22/a0/1b/97/47/31/89/9e/f2/c5/0c/6d/contents_1_imageurl.jpg"></a></li>
-			<li><a href="#messages" role="tab" data-toggle="tab"><p>crazy for you</p><img src="http://static.kita-colle.com/upload/event/6f/16/40/b2/22/a0/1b/97/47/31/89/9e/f2/c5/0c/6d/contents_1_imageurl.jpg"></a></li>
-			<li><a href="#settings" role="tab" data-toggle="tab"><p>ねむれないよるに</p><img src="http://static.kita-colle.com/upload/event/6f/16/40/b2/22/a0/1b/97/47/31/89/9e/f2/c5/0c/6d/contents_1_imageurl.jpg"></a></li>
-		</ul>
-		<div class="col-sm-offset-1 col-sm-7 tab-content">
-			<div class="tab-pane fade in active" id="home">
-				<iframe width="560" height="315" src="//www.youtube.com/embed/11WmdV9ZtLU?controls=0?rel=0" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="tab-pane fade" id="profile">
-				<iframe width="560" height="315" src="//www.youtube.com/embed/YghYIN4so44" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="tab-pane fade" id="messages">
-				<iframe width="560" height="315" src="//www.youtube.com/embed/mahB77wHKbU" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="tab-pane fade" id="settings">
-				<iframe width="560" height="315" src="//www.youtube.com/embed/HdiWcd1hOKQ" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
+          <div id="header">
+<a href="#menu"></a>
+公式HP
+</div>
+<div id="content">
+<p>test</p>
 </div>
 
-<hr>
-
-<div class="about-marina">
-	<h2>まりなについて</h2>
-	<div class="row">
-		<div class="col-sm-offset-1 col-sm-4">
-			<img class="col-sm-12" src="http://static.kita-colle.com/upload/event/6f/16/40/b2/22/a0/1b/97/47/31/89/9e/f2/c5/0c/6d/contents_1_imageurl.jpg">
-			<p class="col-sm-12">RT @rst_fmyokohama: ＜8/3 ON-AIR GUEST＞明日の夜９時りょースタのゲストは？透明感溢れるその天性の歌声が素敵な、来週６日に遂にメジャーデビュー「さいとうまりな」さん(@Saito_Marina) の２週目の登場です。お楽しみに！（スタッフ）#s…</p>
-		</div>
-		<a class="col-sm-offset-1 col-sm-4 twitter-timeline" href="https://twitter.com/Saito_Marina" data-widget-id="495442789228769280">@Saito_Marina からのツイート</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</div>
-</div>
-
-<hr>
-
-<div class="release">
-	<h2>RELEASE</h2>
-	<div class="row">
-		<img class="col-sm-offset-1 col-sm-2" src="http://natalie.mu/media/1406/0617/extra/news_xlarge_saitomarina_hajimaruhutari_cover.jpg">
-		<p class="col-sm-8">
-			さいとうまりなのメジャーデビュー作「はじまるふたり」が8月6日に配信リリースされることが決定した。
-			学習院大学在学中に「ミスFLASH 2011」を受賞するなどグラビアアイドルとして活躍したのち、メジャーデビューに向けて東京・渋谷のカフェfactoryで本気でアルバイトをしながらプロモーション活動を行っているさいとう。いよいよ発売が決定した彼女のメジャーデビュー作は“2014年版シティポップス「平成POP」”をコンセプトに制作されたもの。夏のとある1日の情景を、堂島孝平、多田慎也、tofubeatsが手がけた全4曲で表現している。
-		</p>
-	</div>
-</div>
-
-<div class="finish">
-	<button class="btn btn-default"><a target="_blank" href="https://itunes.apple.com/jp/album/hajimaru-futari-ep/id890830196">購入する</a></button>
-	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	<div class="fb-like" data-href="http://saitomarina-hackathon.github.io" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-</div>
-
-
+<nav id="menu">
+<ul>
+<li class="Selected"><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+</ul>
+</nav>
 
 
 
           <div class="footer">
-            <div class="contact"> </div>
+          <div class="contact"> </div>
           </div>
         </div>
-
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!--テスト実装-->
+        <script type="text/javascript" src="/js/lib/jquery.mmenu.js"></script>
+        <script type="text/javascript">
+        $(function() {
+          $('nav#menu').mmenu({
+            classes: 'mm-light'
+          });
+        });
+        </script>
+        <!--テスト実装-->
     </body>
 </html>
