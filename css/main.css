@@ -1,9 +1,51 @@
 *{
   color: #cfa115;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
-.musics img {
-  width:200px;
+.site{
+}
+
+.btn{
+	background-color: #cfa115;
+	color: #fff;
+	border: none;
+	padding: 20px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+	color: #fff;
+	background-color: #e6e6e6;
+	background-color: #cfa115;
+	border: none;
+	opacity: 0.7;
+}
+
+.music{
+width: 100%;
+height: 182px;
+cursor: pointer;
+background-repeat: no-repeat;
+background-position: 50%;
+}
+
+.music-wrap div:hover{
+	opacity: 0.7;
+}
+
+.morning{background-image: url(/img/morning.jpg); }
+.noon{background-image: url(/img/afternoon.jpg); }
+.evening{background-image: url(/img/evening.jpg); }
+.night{background-image: url(/img/night.jpg); }
+.junai{background-image: url(/img/junai.jpg); }
+.twitter{
+background-image: url(/img/twitter.jpg);
+width: 100%;
+height: 182px;
+cursor: pointer;
+background-repeat: no-repeat;
+background-position: 50%;
 }
 
 .on-img{
@@ -29,7 +71,23 @@ a{
 }
 
 #saitomarina{
+	padding-left: 50px;
 	position: absolute;
-	top: 2px;
-	left: 8px;
+	top: 88px;
+	left: 98px;
+	transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+}
+
+.dance{
+	font-family: 'Dancing Script';
+}
+
+.yugo{
+	font-family: "游ゴシック","Yu Gothic";font-weight: lighter;
+}
+
+.white{
+	color: #fff;
 }
