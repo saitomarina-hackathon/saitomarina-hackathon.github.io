@@ -1,5 +1,13 @@
+*{
+  color: #cfa115;
+}
+
 .musics img {
   width:200px;
+}
+
+.on-img{
+	color: #fff;
 }
 
 .about-marina img{
@@ -18,4 +26,10 @@ a{
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+#saitomarina{
+	position: absolute;
+	top: 2px;
+	left: 8px;
 }
