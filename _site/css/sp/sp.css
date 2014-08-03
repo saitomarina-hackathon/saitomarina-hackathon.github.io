@@ -134,5 +134,8 @@ button::before {
 	border-radius: 0 0 4px 4px;
 	box-shadow: 0 1px 1px 0px #bfbfbf;
 }
-
+.padding{
+padding-top: 20px;
+padding-bottom: 20px;
+}
 
