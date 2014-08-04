@@ -139,10 +139,7 @@ padding-top: 10px;
 }
 .padding_gray_10px{
 padding-top: 10px;
-background-image: url("/images/itunes_bg.png");
+background-color: #f5f4ef;
 }
 
-.padding_gray_5px{
-padding-top: 5px;
-background-image: url("/images/itunes_bg.png");
-}
+
