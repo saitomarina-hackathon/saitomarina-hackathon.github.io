@@ -46,6 +46,11 @@ height: 182px;
 cursor: pointer;
 background-repeat: no-repeat;
 background-position: 50%;
+background-color: #f5f4ef;
+}
+
+.hatena-bookmark-button-frame{
+	margin-left: 86px;
 }
 
 .on-img{
