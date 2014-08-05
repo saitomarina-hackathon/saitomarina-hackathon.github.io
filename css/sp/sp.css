@@ -145,3 +145,20 @@ background-color: #f5f4ef;
 background-color: #f5f4ef;
 }
 
+
+ul{
+list-style-type: none;
+text-align: center;
+padding-left: 0px;
+}
+
+ul li{
+list-style-type: none;
+display: inline-block;
+}
+
+ul li img{
+max-height:65px;
+}
+
+
