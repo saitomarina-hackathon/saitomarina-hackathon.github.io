@@ -23,21 +23,16 @@
 }
 
 .music{
-width: 100%;
-height: 182px;
 cursor: pointer;
-background-repeat: no-repeat;
-background-position: 50%;
+}
+
+.music img{
 }
 
 .music-wrap div:hover{
 	opacity: 0.7;
 }
 
-.morning{background-image: url(/img/morning.jpg); }
-.noon{background-image: url(/img/afternoon.jpg); }
-.evening{background-image: url(/img/evening.jpg); }
-.night{background-image: url(/img/night.jpg); }
 .junai{background-image: url(/img/junai.jpg); }
 .twitter{
 background-image: url(/img/twitter.jpg);
@@ -47,6 +42,20 @@ cursor: pointer;
 background-repeat: no-repeat;
 background-position: 50%;
 background-color: #f5f4ef;
+}
+
+.about_text{
+position: absolute;
+padding-top: 440px;
+right: 74px;
+width: 400px;
+}
+
+.what_music_text{
+	color: #fff;
+	position: absolute;
+	padding-top: 200px;
+	padding-left: 184px;
 }
 
 .hatena-bookmark-button-frame{
